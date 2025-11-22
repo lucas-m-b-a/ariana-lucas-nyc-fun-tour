@@ -135,7 +135,7 @@
 <body>
   <h1>Ari & Lucas NYC Date</h1>
   <p class="subtitle">
-    ¡Hola Ari! I'm excited to go out with you this Thanksgiving but don't know so much about your favorite ways to enjoy your life, so I made this website to streamline our choosing and make it fun 😉
+    ¡Hola! I'm excited to go out with you this Thanksgiving but don't know so much about your favorite ways to enjoy life. So, I made this website to streamline our choosing and make it fun (:
   </p>
 
   <div class="divider"></div>
@@ -143,43 +143,51 @@
   <!-- Date Options Tabs -->
   <div class="tabs">
     <button class="tab-button" onclick="showTab('broadway')">Broadway</button>
-    <button class="tab-button" onclick="showTab('chelsea')">Chelsea Market</button>
+    <button class="tab-button" onclick="showTab('jazz')">Live Jazz</button>
     <button class="tab-button" onclick="showTab('met')">The MET</button>
     <button class="tab-button" onclick="showTab('coffee')">Coffee Shop</button>
     <button class="tab-button" onclick="showTab('restaurant')">Restaurant</button>
     <button class="tab-button" onclick="showTab('movie')">Movie Theater</button>
   </div>
 
-  <div id="broadway" class="tab-content">Broadway options will go here.</div>
-  <div id="chelsea" class="tab-content">Chelsea Market ideas will go here.</div>
-  <div id="met" class="tab-content">MET exhibits and sections will go here.</div>
-  <div id="coffee" class="tab-content">Coffee shop recommendations will go here.</div>
-  <div id="restaurant" class="tab-content">Restaurant ideas will go here.</div>
-  <div id="movie" class="tab-content">Movie theater choices will go here.</div>
+  <div id="broadway" class="tab-content">The Lion King play on Broadway is hands down one of the most beautiful things I have seen in my life. I would love to check out a new play, and we could make use of the <a href="https://lottery.broadwaydirect.com/" target="_blank">lottery</a>
+so as not to destroy our graduate student budget.</div>
+  <div id="jazz" class="tab-content">The East Village live jazz bars like <a href="https://www.closeupnyc.com" target="_blank">Close Up</a> and <a href="https://www.terrablues.com/" target="_blank">Terra Blues</a> are a fancy NYC thing I have always wanted to try out. I like the cozy low-lights atmosphere, but it might not be ideal as the single choice for the night if we want to enjoy a good conversation—thankfully, this website's RSVP is amazingly equipped with checkboxes, so you're able to choose more than one option if you want!</div>
+  <div id="met" class="tab-content">I find museums both fulfilling and draining. I therefore live in cycles of going to a museum, having an inspiring time, returning home intensely tired , and taking a long break from going to museums, to then start craving for them a few months later. I'm currently on this latter stage of the cycle. The MET is my favorite in NYC and I'd love to learn more about the role art and history play in your life. </div>
+  <div id="coffee" class="tab-content">A classic, right? Some options I like are <a href="https://www.kobricks.com/" target="_blank">Kobrick</a>, <a href="https://www.abraconyc.com" target="_blank">Abraço</a>, and the <a href="https://www.hungarianpastryshop.com/" target="_blank">Hungarian Pastry Shop</a>—too early for Morningside Heights nostalgia?</div>
+  <div id="restaurant" class="tab-content">In general, restaurants easily impress me and I have a great time going out for food wherever it is. So, I will not start a list of hyperlinks for this one lest it gets too long. Rather, let me put forth a single suggestion: just a couple of months ago I went to Chelsea Market for the first time and I've been wondering ever since why I wasn't going there every weekend throughout college.</div>
+  <div id="movie" class="tab-content">The movie theater is really a sacred place for me. I get to totally unplug from the external world and am guaranteed to have a good time regardless of how good or bad the film per se is. We could take the traditional route and pick any <a href="https://www.amctheatres.com/" target="_blank">AMC</a> or go indie at the <a href="https://angelikafilmcenter.com/" target="_blank">Angelika Film Center</a>.</div>
 
   <!-- RSVP Section -->
   <div class="section-placeholder">
     <h2>RSVP</h2>
-    <form action="https://formspree.io/f/xldvwqyl" method="POST">
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
       
       <!-- Activities Checkboxes -->
       <p><strong>Which activities are you interested in?</strong></p>
       <label><input type="checkbox" name="activity[]" value="Broadway"> Broadway</label><br>
-      <label><input type="checkbox" name="activity[]" value="Chelsea Market"> Chelsea Market</label><br>
+      <label><input type="checkbox" name="activity[]" value="Live Jazz"> Live Jazz</label><br>
       <label><input type="checkbox" name="activity[]" value="The MET"> The MET</label><br>
       <label><input type="checkbox" name="activity[]" value="Coffee Shop"> Coffee Shop</label><br>
       <label><input type="checkbox" name="activity[]" value="Restaurant"> Restaurant</label><br>
       <label><input type="checkbox" name="activity[]" value="Movie Theater"> Movie Theater</label><br><br>
 
-      <!-- Time of Day -->
-      <p><strong>Preferred time of day:</strong></p>
+      <!-- Day -->
+      <p><strong>Day:</strong></p>
+      <label><input type="radio" name="day" value="26"> Nov. 26</label><br>
+      <label><input type="radio" name="day" value="27"> Nov. 27</label><br>
+      <label><input type="radio" name="day" value="28"> Nov. 28</label><br>
+      <label><input type="radio" name="day" value="29"> Nov. 29</label><br><br>
+
+      <!-- Time -->
+      <p><strong>Time:</strong></p>
       <label><input type="radio" name="time_of_day" value="Morning"> Morning</label><br>
       <label><input type="radio" name="time_of_day" value="Afternoon"> Afternoon</label><br>
       <label><input type="radio" name="time_of_day" value="Evening"> Evening</label><br><br>
 
       <!-- Comments -->
-      <p><strong>Comments or preferences:</strong></p>
-      <textarea name="comments" rows="4" placeholder="Write anything you'd like..." style="width: 100%; padding: 0.5rem; border: 1px solid #b68a2c44; border-radius: 8px;"></textarea><br><br>
+      <p><strong>Would you like to specify any of your choices?</strong></p>
+      <textarea name="comments" rows="4" placeholder="Specific coffee shop? Specific jazz bar? Specific time? Specific attire?" style="width: 100%; padding: 0.5rem; border: 1px solid #b68a2c44; border-radius: 8px;"></textarea><br><br>
 
       <!-- Submit -->
       <button type="submit">Submit RSVP</button>
